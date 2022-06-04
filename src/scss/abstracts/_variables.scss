@@ -1,0 +1,25 @@
+$primary: #d7a31a;
+$secondary: #2d3058;
+$body-background: #111827;
+$lightyellow: #f9f871;
+$sky: #00c6bd;
+$blue: #4191f9;
+$lightblue: #3cefff;
+$grass: #82d47c;
+$darkgreen: #00a58a;
+$green: #23ce6b;
+$lightgreen: #00c6bd;
+
+$navbar-height: 6rem;
+$sidebar-width: 30rem;
+
+$mobile-width: 576px;
+$tablet-width: 768px;
+$laptop-width: 992px;
+$large-width: 1200px;
+:export {
+	primaryColor: $primary;
+	navbarHeight: $navbar-height;
+	sidebarWidth: $sidebar-width;
+	tabletWidth: $tablet-width;
+}

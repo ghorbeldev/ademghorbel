@@ -1,0 +1,80 @@
+@use '../../scss/abstracts/' as *;
+.contact {
+	.container {
+		@include flex(stretch, center);
+		flex-direction: column;
+	}
+	&__content {
+		flex: 1;
+		@include flex(unset, space-between);
+		@include tablet {
+			flex-direction: column-reverse;
+			text-align: center;
+		}
+		form {
+			flex-basis: 70%;
+			.main-input {
+				padding: 20px;
+				display: block;
+				border: 1px solid #222;
+				width: 100%;
+				margin-bottom: 25px;
+			}
+			textarea {
+				resize: none;
+				height: 200px;
+			}
+			input {
+				&[type='submit'] {
+					display: block;
+					border: none;
+					font-size: 1.1rem;
+					width: fit-content;
+					padding: 0.7rem 1.4rem;
+					background-color: $secondary;
+					color: #fff;
+					margin-left: auto;
+					cursor: pointer;
+					transition: all 0.4s;
+				}
+
+				&:hover {
+					background-color: #fff;
+					color: $secondary;
+					border: 1px solid $secondary;
+					font-weight: 700;
+				}
+			}
+		}
+		.info {
+			flex-basis: 25%;
+			color: #e1e1e1;
+			h4 {
+				text-transform: uppercase;
+				margin-bottom: 30px;
+				font-weight: 550;
+				font-size: 1.2em;
+				color: $lightblue;
+			}
+			.phone {
+				display: block;
+				margin-bottom: 10px;
+				font-size: 0.9em;
+			}
+			h4:nth-of-type(2) {
+				margin-top: 78px;
+			}
+			address {
+				display: block;
+				font-size: 0.9em;
+				line-height: 1.6;
+			}
+			@include tablet {
+				margin-bottom: 30px;
+				h4:nth-of-type(2) {
+					margin-top: 40px;
+				}
+			}
+		}
+	}
+}

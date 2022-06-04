@@ -1,0 +1,121 @@
+@use '../../scss/abstracts/' as *;
+
+.hero {
+	color: lighten($body-background, 90%);
+	margin-top: $navbar-height;
+	position: relative;
+	z-index: 3;
+	.hero-container {
+		@include flex(center, space-between);
+		position: relative;
+		height: calc(100vh - $navbar-height);
+		@include laptop {
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+	}
+	&__about {
+		&__name {
+			font-size: 1.25rem;
+			font-weight: 400;
+			@include flex(center, flex-start);
+			color: $primary;
+			letter-spacing: 5px;
+			margin-bottom: 1rem;
+			&::before {
+				content: '';
+				height: 2px;
+				width: 3rem;
+				margin-right: 5px;
+				background-color: $primary;
+				@include laptop {
+					width: 2.4rem;
+				}
+			}
+			@include laptop {
+				justify-content: center;
+				margin-bottom: 2rem;
+				&::after {
+					content: '';
+					height: 2px;
+					width: 2.4rem;
+					margin-right: 5px;
+					background-color: currentColor;
+				}
+			}
+		}
+		&__lines {
+			width: 600px;
+			max-width: 100%;
+			@include flex(center, flex-start);
+			flex-wrap: wrap;
+			gap: 0 0.5ch;
+			font-size: 3.6rem;
+			line-height: 1.5;
+			font-weight: 300;
+			@include large {
+				font-size: 3rem;
+				width: 450px;
+			}
+			@include laptop {
+				font-size: 2.8rem;
+				line-height: 1.4;
+				margin-bottom: 3rem;
+				width: auto;
+				justify-content: center;
+			}
+			@include tablet {
+				font-size: 3rem;
+				width: 100%;
+				margin-bottom: 0;
+			}
+			@include mobile {
+				justify-content: flex-start;
+				font-size: 2.5rem;
+			}
+			.line {
+				white-space: nowrap;
+				letter-spacing: 2.5px;
+				display: block;
+				.text-primary {
+					font-weight: bolder;
+				}
+			}
+		}
+	}
+	&__image {
+		max-width: 100%;
+		width: 50%;
+		@include laptop {
+			width: 100%;
+			padding-left: 6rem;
+			padding-right: 6rem;
+		}
+		@include tablet {
+			display: none;
+		}
+		svg {
+			width: 100%;
+		}
+	}
+	&__scrolldown {
+		--size: 2rem;
+		position: absolute;
+		left: 0;
+		bottom: var(--size);
+		cursor: pointer;
+		color: white;
+		margin-left: 6rem;
+		@include tablet {
+			margin-left: 2rem;
+		}
+		@include mobile {
+			margin-left: 1rem;
+		}
+		svg {
+			color: currentColor;
+			font-size: var(--size);
+		}
+	}
+}

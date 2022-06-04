@@ -1,0 +1,36 @@
+@use '../../scss/abstracts/' as *;
+
+.section-counter {
+	position: fixed;
+	top: 50%;
+	right: 0;
+	width: fit-content;
+	transform: translateY(-50%);
+	z-index: 99999;
+	@include mobile {
+		display: none;
+	}
+	&__balls {
+		@include flex;
+		flex-direction: column;
+		padding: 1rem 2.5rem;
+		&__ball {
+			background-color: white;
+			border-radius: 50%;
+			width: 0.9rem;
+			height: 0.9rem;
+			a {
+				border-radius: 50%;
+				display: block;
+				width: 0.9rem;
+				height: 0.9rem;
+			}
+			&:not(:last-child) {
+				margin-bottom: 1rem;
+			}
+			a.active {
+				background-color: $primary;
+			}
+		}
+	}
+}

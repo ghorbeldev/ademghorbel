@@ -1,0 +1,78 @@
+@use './abstracts/' as *;
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box; /* Firefox, other Gecko */
+	box-sizing: border-box;
+}
+*:not(i) {
+	font-family: 'Roboto', Verdana, sans-serif;
+}
+
+body {
+	max-width: 100vw;
+	overflow-x: hidden;
+	background-image: linear-gradient(
+		135deg,
+		$body-background,
+		lighten($body-background, 2.5%),
+		$body-background
+	);
+}
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+button,
+input {
+	outline: none;
+}
+button {
+	border: 0;
+	cursor: pointer;
+}
+ul {
+	list-style: none;
+}
+/* Style The Page Scroll Bar */
+::-webkit-scrollbar {
+	width: 0.5rem;
+}
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #aebddb;
+	border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: darken(#aebddb, 15%);
+}
+.text-primary {
+	color: $primary;
+}
+.work-in {
+	height: 100vh;
+	width: 100vw;
+	color: lighten($body-background, 72%);
+	font-size: 8rem;
+	@include flex;
+}
+.section {
+	width: 100vw;
+	height: calc(100vh - 80px);
+}
+
+// Container class
+.container {
+	padding: 0 6rem;
+	max-width: 1440px;
+	@include tablet {
+		padding: 0 2rem;
+	}
+	@include mobile {
+		padding: 0 1rem;
+	}
+}

@@ -1,0 +1,35 @@
+@use '../../scss/abstracts/' as *;
+.main-heading {
+	font-size: 2.5rem;
+	font-weight: 300;
+	text-transform: uppercase;
+	@include flex(center, flex-start);
+	color: $primary;
+	color: #a5b6c7;
+	letter-spacing: 5px;
+	margin-bottom: 2rem;
+	margin-top: 1.5rem;
+	&::before {
+		content: '';
+		height: 2px;
+		width: 3rem;
+		margin-right: 5px;
+		background-color: currentColor;
+		@include laptop {
+			width: 2.4rem;
+		}
+	}
+	@include laptop {
+		justify-content: center;
+		&::after {
+			content: '';
+			height: 2px;
+			width: 2.4rem;
+			margin-right: 5px;
+			background-color: currentColor;
+		}
+	}
+	@include mobile {
+		font-size: 2rem;
+	}
+}

@@ -1,0 +1,44 @@
+@use '../../scss/abstracts/' as *;
+.about {
+	color: white;
+	position: relative;
+	.container {
+		@include flex(stretch, center);
+		flex-direction: column;
+	}
+	&__content {
+		@include flex(flex-start, space-between);
+		flex-direction: column;
+		flex: 1;
+		padding-top: var(--gap);
+		padding-bottom: var(--gap);
+		@include tablet {
+			--gap: 0.75rem;
+		}
+	}
+	&__paragraph {
+		font-size: 2rem;
+		max-width: 40ch;
+		line-height: 1.6;
+		font-weight: 300;
+		letter-spacing: 2px;
+		color: #f1f1f1;
+		margin-bottom: calc(var(--gap) * 2);
+		span:not(.empty) {
+			display: inline-block;
+		}
+		@include laptop {
+			font-size: 2rem;
+		}
+		@include tablet {
+			font-size: 1.8rem;
+		}
+	}
+	&__image {
+		max-width: 100%;
+		width: 500px;
+		margin-bottom: 1rem;
+		align-self: center;
+		@include flex;
+	}
+}
