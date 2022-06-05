@@ -1,5 +1,9 @@
 import { motion } from 'framer-motion';
 import React from 'react';
+import { FiPhoneCall } from 'react-icons/fi';
+import { MdOutlineMail } from 'react-icons/md';
+
+import { fadeDown, fadeLeft, fadeUp } from '../../configs/framerVariants';
 import MainHeading from '../main-heading/MainHeading';
 import './contact.scss';
 const Contact = () => {
@@ -19,46 +23,84 @@ const Contact = () => {
 			}}
 			viewport={{ once: true, amount: 0.8 }}
 		>
-			<div className='container section'>
+			<div className='container'>
 				<MainHeading>Contact Me</MainHeading>
 				<div className='contact__content'>
-					<form
+					<motion.form
+						variants={{
+							visible: {
+								transition: {
+									staggerChildren: 0.2,
+								},
+							},
+						}}
 						action='https://formsubmit.co/adem.ghorbel9@gmail.com'
 						method='POST'
 					>
-						<input
+						<motion.input
 							className='main-input'
 							type='text'
 							name='name'
 							placeholder='Your Name'
 							required
+							variants={fadeLeft}
 						/>
-						<input
+						<motion.input
 							className='main-input'
 							type='email'
 							name='email'
 							placeholder='Your Email'
 							required
+							variants={fadeLeft}
 						/>
-						<textarea
+						<motion.textarea
 							className='main-input'
 							name='message'
 							placeholder='Your Message'
-						></textarea>
-						<input type='submit' value='Send Message' />
-					</form>
-					<div class='info'>
-						<h4>Get In Touch</h4>
-						<span class='phone'>+00 123.456.789</span>
-						<span class='phone'>+00 123.456.789</span>
-						<h4>Where We Are</h4>
-						<address>
-							Awesome Address 17 <br />
-							New York,NYC <br />
-							123-4567-890 <br />
-							USA
-						</address>
-					</div>
+							variants={fadeLeft}
+						></motion.textarea>
+						<motion.input
+							type='submit'
+							value='Send Message'
+							variants={fadeDown}
+						/>
+					</motion.form>
+					<motion.div
+						variants={{
+							visible: {
+								transition: {
+									// delay: 0.8,
+									staggerChildren: 0.2,
+								},
+							},
+						}}
+						className='info'
+					>
+						<motion.h4 variants={fadeUp}>Want To Discuss</motion.h4>
+						<motion.a
+							className='info__contact'
+							href='tel:+216-21-049-540'
+							variants={fadeDown}
+						>
+							<FiPhoneCall />
+							<span>+21621049540</span>
+						</motion.a>
+						<motion.a
+							className='info__contact'
+							href='mailto:adem.ghorbel9@gmail.com'
+							variants={fadeDown}
+						>
+							<MdOutlineMail />
+							<span>Mail</span>
+						</motion.a>
+						<motion.h4 className='info__thanks' variants={fadeUp}>
+							THANKS FOR YOUR VISIT!
+						</motion.h4>
+						<motion.p variants={fadeDown}>
+							Send Me a Message <span className='text-primary'>Now</span> and
+							Let's Start Talking
+						</motion.p>
+					</motion.div>
 				</div>
 			</div>
 		</motion.div>

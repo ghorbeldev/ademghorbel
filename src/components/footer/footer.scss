@@ -1,0 +1,57 @@
+@use '../../scss/abstracts/' as *;
+.footer {
+	height: 6rem;
+	margin-top: 2rem;
+	@include laptop {
+		height: auto;
+	}
+	width: 100vw;
+	padding: 2rem 0;
+	background-color: darken($secondary, 10%);
+	color: lighten($body-background, 80%);
+	border-top: 1px solid lighten($secondary, 30%);
+	.container {
+		@include flex(center, space-between);
+		height: 100%;
+		@include laptop {
+			flex-direction: column-reverse;
+		}
+	}
+	p {
+		font-size: 1.25rem;
+		font-weight: 300;
+	}
+	.social {
+		align-self: stretch;
+		@include laptop {
+			margin-bottom: 2rem;
+		}
+		@include flex;
+		h4 {
+			font-size: 1.3rem;
+			font-weight: 300;
+			margin-right: 1rem;
+		}
+		a {
+			@include flex;
+			color: currentColor;
+			font-size: 1.25rem;
+			padding: 1rem;
+			transition: all 0.3s;
+			border-radius: 50%;
+			&:hover {
+				background-color: $secondary;
+			}
+		}
+		@include mobile {
+			h4 {
+				font-size: 1.1rem;
+				margin-right: 0.5rem;
+			}
+			a {
+				padding: 0.4rem;
+				font-size: 1.05rem;
+			}
+		}
+	}
+}

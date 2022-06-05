@@ -7,7 +7,7 @@
 	width: fit-content;
 	transform: translateY(-50%);
 	z-index: 99999;
-	@include mobile {
+	@include tablet {
 		display: none;
 	}
 	&__balls {

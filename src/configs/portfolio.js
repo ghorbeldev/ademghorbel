@@ -27,14 +27,6 @@ const portfolio = [
 			'https://github.com/ghorbeldev/bootstrap-v5-and-sass-portfolio-template',
 	},
 	{
-		title: '30 Seconds Of Code Chrom Extension',
-		description: ['HTML5', 'CSS3', 'JavaScript', 'axios, cheerio'],
-		img: process.env.PUBLIC_URL + '/assets/images/30-seconds-of-code.png',
-		demoURL: '',
-		repoURL:
-			'https://github.com/ghorbeldev/30-seconds-of-code-chrome-extension',
-	},
-	{
 		title: 'Elzero Web School Template',
 		description: ['HTML5', 'CSS3', 'JavaScript'],
 		img: process.env.PUBLIC_URL + '/assets/images/template-3.png',
@@ -48,6 +40,26 @@ const portfolio = [
 		demoURL: 'https://ghorbeldev.github.io/kasper-template/',
 		repoURL: 'https://github.com/ghorbeldev/kasper-template',
 	},
+	{
+		title: 'Ecommerce Admin Dashboard',
+		description: [
+			'ReactJS',
+			'Sass',
+			'React Modules Like Chart.js && react-router',
+		],
+		img: process.env.PUBLIC_URL + '/assets/images/dashboard.png',
+		demoURL: 'https://heuristic-curran-24b189.netlify.app/',
+		repoURL: 'https://github.com/ghorbeldev/react-ecommerce-dashboard',
+	},
+	{
+		title: '30 Seconds Of Code Chrom Extension',
+		description: ['HTML5', 'CSS3', 'JavaScript', 'axios, cheerio'],
+		img: process.env.PUBLIC_URL + '/assets/images/30-seconds-of-code.png',
+		demoURL: '',
+		repoURL:
+			'https://github.com/ghorbeldev/30-seconds-of-code-chrome-extension',
+	},
+
 	{
 		title: 'Vibo Template',
 		description: ['HTML5', 'CSS3', 'JavaScript'],

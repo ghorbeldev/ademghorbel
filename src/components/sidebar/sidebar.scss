@@ -123,7 +123,7 @@
 		&__item {
 			@include flex(center, flex-start);
 			padding: 1rem 3rem;
-			font-size: 1.5rem;
+			font-size: 1.25rem;
 			font-weight: 500;
 			color: #555;
 			@include mobile {

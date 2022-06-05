@@ -37,7 +37,7 @@ const Portfolio = () => {
 						}}
 						loop={true}
 						slidesPerView={1}
-						spaceBetweenSlides={0}
+						spaceBetween={0}
 						breakpoints={{
 							992: {
 								slidesPerView: 2,

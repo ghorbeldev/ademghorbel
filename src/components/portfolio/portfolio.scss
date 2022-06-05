@@ -75,6 +75,8 @@
 				flex: 1;
 				font-size: 1.1rem;
 				color: #e1e1e1;
+				@include flex(flex-start, center);
+				flex-direction: column;
 			}
 
 			&:hover img,
