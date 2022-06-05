@@ -21,7 +21,7 @@ const Contact = () => {
 					},
 				},
 			}}
-			viewport={{ once: true, amount: 0.8 }}
+			viewport={{ once: true, amount: 0.25 }}
 		>
 			<div className='container'>
 				<MainHeading>Contact Me</MainHeading>

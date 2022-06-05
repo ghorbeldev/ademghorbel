@@ -10,6 +10,7 @@ import './portfolio.scss';
 import { Pagination, Navigation } from 'swiper';
 import { AiFillGithub } from 'react-icons/ai';
 import { BsCodeSlash } from 'react-icons/bs';
+import { fadeDown } from '../../configs/framerVariants';
 const Portfolio = () => {
 	return (
 		<motion.div
@@ -20,8 +21,8 @@ const Portfolio = () => {
 			variants={{
 				visible: {
 					transition: {
-						delay: 0.2,
-						staggerChildren: 0.8,
+						// delay: 0.2,
+						staggerChildren: 0.4,
 					},
 				},
 			}}
@@ -52,7 +53,10 @@ const Portfolio = () => {
 					>
 						{portfolio.map((project, index) => (
 							<SwiperSlide key={index}>
-								<motion.div className='portfolio__content--card'>
+								<motion.div
+									variants={fadeDown}
+									className='portfolio__content--card'
+								>
 									<div className='portfolio__content--card--img'>
 										<img src={project.img} alt={project.title} />
 									</div>

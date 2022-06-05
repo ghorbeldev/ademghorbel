@@ -20,7 +20,7 @@ const About = () => {
 					},
 				},
 			}}
-			viewport={{ once: true, amount: 0.8 }}
+			viewport={{ once: true, amount: 0.25 }}
 		>
 			<div className='container section'>
 				<MainHeading className='main-heading'>About Me</MainHeading>

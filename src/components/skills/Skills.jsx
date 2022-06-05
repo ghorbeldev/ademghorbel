@@ -35,7 +35,7 @@ const Skills = () => {
 				visible: {
 					transition: {
 						delay: 0.2,
-						staggerChildren: 0.8,
+						staggerChildren: 0.4,
 					},
 				},
 			}}
