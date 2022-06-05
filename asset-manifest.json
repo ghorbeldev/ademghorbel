@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/ademghorbel/static/css/main.bcac868c.css",
-    "main.js": "/ademghorbel/static/js/main.7e67cd5c.js",
+    "main.js": "/ademghorbel/static/js/main.3237c66f.js",
     "index.html": "/ademghorbel/index.html",
     "main.bcac868c.css.map": "/ademghorbel/static/css/main.bcac868c.css.map",
-    "main.7e67cd5c.js.map": "/ademghorbel/static/js/main.7e67cd5c.js.map"
+    "main.3237c66f.js.map": "/ademghorbel/static/js/main.3237c66f.js.map"
   },
   "entrypoints": [
     "static/css/main.bcac868c.css",
-    "static/js/main.7e67cd5c.js"
+    "static/js/main.3237c66f.js"
   ]
 }
