@@ -52,6 +52,13 @@ const portfolio = [
 		repoURL: 'https://github.com/ghorbeldev/react-ecommerce-dashboard',
 	},
 	{
+		title: 'Leon Template',
+		description: ['HTML5', 'CSS3', 'JavaScript'],
+		img: process.env.PUBLIC_URL + '/assets/images/leon-template.png',
+		demoURL: 'https://ghorbeldev.github.io/leon-template/',
+		repoURL: 'https://github.com/ghorbeldev/leon-template',
+	},
+	{
 		title: '30 Seconds Of Code Chrom Extension',
 		description: ['HTML5', 'CSS3', 'JavaScript', 'axios, cheerio'],
 		img: process.env.PUBLIC_URL + '/assets/images/30-seconds-of-code.png',

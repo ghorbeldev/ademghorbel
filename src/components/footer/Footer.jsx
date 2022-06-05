@@ -11,13 +11,13 @@ const Footer = () => {
 				</p>
 				<div className='social'>
 					<h4>Check out My Networks </h4>
-					<a href='github.com'>
+					<a href='https://github.com/ghorbeldev'>
 						<BsGithub />
 					</a>
-					<a href='facebook.com'>
+					<a href='https://www.facebook.com/adem.ghorbel.98'>
 						<BsFacebook />
 					</a>
-					<a href='linkedin.com'>
+					<a href='https://www.linkedin.com/in/adem-ghorbel-324659219/'>
 						<FaLinkedinIn />
 					</a>
 				</div>
