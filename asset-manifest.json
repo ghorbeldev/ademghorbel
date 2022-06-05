@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ademghorbel/static/css/main.95102f14.css",
+    "main.js": "/ademghorbel/static/js/main.242803a7.js",
+    "index.html": "/ademghorbel/index.html",
+    "main.95102f14.css.map": "/ademghorbel/static/css/main.95102f14.css.map",
+    "main.242803a7.js.map": "/ademghorbel/static/js/main.242803a7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.95102f14.css",
+    "static/js/main.242803a7.js"
+  ]
+}
