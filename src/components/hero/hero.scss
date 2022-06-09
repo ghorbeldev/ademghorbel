@@ -2,13 +2,13 @@
 
 .hero {
 	color: lighten($body-background, 90%);
-	margin-top: $navbar-height;
+	// padding-top: $navbar-height;
 	position: relative;
 	z-index: 3;
 	.hero-container {
 		@include flex(center, space-between);
 		position: relative;
-		height: calc(100vh - $navbar-height);
+		height: 100vh;
 		@include laptop {
 			justify-content: center;
 			align-items: center;

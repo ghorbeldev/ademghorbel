@@ -21,8 +21,7 @@ const Portfolio = () => {
 			variants={{
 				visible: {
 					transition: {
-						// delay: 0.2,
-						staggerChildren: 0.4,
+						staggerChildren: 0.2,
 					},
 				},
 			}}

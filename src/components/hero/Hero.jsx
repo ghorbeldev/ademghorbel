@@ -48,6 +48,10 @@ const Hero = () => {
 							Developer
 						</motion.div>
 					</div>
+					{/* <p>
+						I'm Freelancer, Front end Developer, I enjoy making websites and I'm
+						a content creator
+					</p> */}
 				</div>
 				{showImage && (
 					<motion.div
